@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual número é maior?</h1>
+    <p>Número 1: <span id="numero1"></span></p>
+    <p>Número 2: <span id="numero2"></span></p>
+    <div id="resul"></div>
+    
+
+    <script>
+        let numero1 = Number (prompt ("digite o primero numero"));
+        let numero2 = Number (prompt ("digite o segundo numero"));
+        let msg;
+
+        if (numero1 > numero2 ){
+            msg = "o primeiro numero é maior";
+        } else {
+            msg = "o segundo numero é maior";
+        }
+
+        document.getElementById("numero1").innerHTML=numero1;
+        document.getElementById("numero2").innerHTML=numero2;
+        document.getElementById("resul").innerHTML=msg;
+
+    </script>
+    
+</body>
+</html>

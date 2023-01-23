@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+</head>
+<body>
+    <h1>Agora com IF e else</h1>
+    <div id="resultado"></div>
+    <script>
+        let num = Number (prompt("Digite um número."));
+        let msg
+
+        if (num < 100){
+            num = num + 50;
+        }else {
+            num += 150;
+        }
+        msg= "O resultado é: "
+
+        document.getElementById("resultado").innerHTML= msg + num;
+    </script>
+</body>
+</html>

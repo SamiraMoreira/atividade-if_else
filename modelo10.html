@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>nome do funcionario: <span id="nome"></span></p>
+    <div id="resul"></div>
+
+    <script>
+        let nome = prompt ("digite um nome do funcionario");
+        let vendas = Number (prompt("digite o total de vendas do funcionario"));
+        let meta = Number (prompt("digite uma meta."))
+        let msg;
+
+        if (meta >= vendas){
+            msg = "não ganhou"
+        }else {
+            msg = "ganhou"
+        }
+
+        document.getElementById("nome").innerHTML=nome;
+        document.getElementById("resul").innerHTML=msg;
+    </script>
+
+
+</body>
+</html>

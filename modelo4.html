@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de votação</h1>
+    <p id="resul"></p>
+    <script>
+        let idade = Number(prompt("qual é a sua idade"));
+        let voto;
+
+        if(idade >=16 && idade <= 17){
+            voto = "opcional";
+        }else if(idade >=18 && idade <=65){
+            voto ="obrigatório";
+        }else if(idade >=66 )
+            voto = "opcional";
+        else{
+            voto="você não pode votar"
+        }
+        
+        document.getElementById("resul").innerHTML=voto;
+
+    </script>
+
+</body>
+</html>
